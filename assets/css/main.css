@@ -29,6 +29,9 @@
   footer, header, hgroup, menu, nav, section {
       display: block;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
   body {
       line-height: 1;
   }
@@ -47,36 +50,657 @@
       border-collapse: collapse;
       border-spacing: 0;
   }
+
+  ::selection {
+    background:  #F26969; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background:  #F26969; /* Gecko Browsers */
+  }
   /*-----------------------------------------------------------------------------------------------*/
-  html, body {background-color: white;
-    font-family: Arial, serif;
-    font-weight: bold;
-    font-size : 80px;
-    width: 100%;
-    height: 100%;
-    margin:0;
-    padding:0;
-    color: black;
+html{
+    padding: 0;
+    margin: 0;
 }
 
-  section {
-      height:100vh;
-  }
+body {
+    background-color: white;
+    font-family: 'Montserrat',Arial, serif;
+    font-weight: bold;
+    font-size : 80px; 
+    padding:0;
+    color: #190808;
+    background-color: white;
+}
 
-  .header-section{
-      background-color: black;
-      color:white;
-  }
+#main-content{
+    width: 1130px;
+    margin: 0px auto 48px auto;
+}
 
-  h1{
-      font-size: 100%;
-  }
 
-  .header-span{
-      background-color: white;
-      color: black;
-  }
 
-  p{
-      font-size: 15%;
-  }
+header{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+section.header-section{
+    height:100vh;
+}
+
+
+h1{
+    font-size: 72px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+p,li{
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li{
+    padding-bottom:10px;
+    font-size: 20px;
+   
+}
+
+a {
+    color:#190808;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover{
+    color:  #F26969;
+}
+
+
+
+footer {
+    font-size: 40px;
+    background-color: #190808;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width:100%;
+}
+
+
+.grid-section{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 24px 24px;
+    margin: 50px auto 0px auto;
+}
+
+.grid-section h1{
+    grid-column: 1 / span 4;
+}
+
+.grid-section img{
+    grid-column: 1 /span 6;
+    max-width: 500px;
+ 
+}
+
+.grid-section p{
+    padding-bottom: 20px;
+}
+
+.grid-section .about-content{
+    grid-column: 7 /span 6;
+    grid-row: 2
+}
+
+.grid-section div.project1{
+    grid-column: 1 /span 4;
+
+}
+.grid-section div.project2{
+    grid-column: 5 /span 4;
+
+}
+
+.grid-section div.project3{
+    grid-column: 9 /span 4;
+}
+
+.grid-section div.project4{
+    grid-column: 1 /span 4;
+    grid-row: 3;
+}
+
+.grid-section div.project5{
+    grid-column: 5 /span 4;
+    grid-row: 3;
+}
+.grid-section div.project{
+    max-width: 360px;
+    max-height: 410px;
+    transition: color 0.5s;
+   
+}
+
+.grid-section div.project:hover{
+    color: #F26969;
+
+}
+
+.grid-section div.project img:hover{
+   opacity: .5;
+
+}
+
+.grid-section div.project img{
+    max-width: 100%;
+    transition: opacity 0.5s;
+}
+
+.grid-section form{
+    grid-column : 1 / span 5;
+    font-size: 24px;
+}
+
+.grid-section form p{
+    padding-bottom: 0px;
+}
+
+textarea,input{
+    width:100%;
+    padding: 8px 16px 8px 16px;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    height: 100px;
+}
+
+label{
+    display: block;
+    margin: 16px 0 16px 0;
+}
+
+button{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#190808;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Montserrat',Arial, serif;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    transition: background-color 0.5s,border-color 0.5s,color 0.5s;
+}
+
+button:hover{
+    background-color: #F26969;;
+    border-color:white;
+    color: white;
+}
+
+.button-link{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#190808;
+    width: 40%;
+    height: auto;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Montserrat',Arial, serif;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    transition: background-color 0.5s,border-color 0.5s,color 0.5s;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button-link:hover{
+    background-color: #F26969;;
+    border-color:white;
+    color: white;
+}
+
+a.description-link{
+    text-decoration: underline;
+}
+
+/* Grid section project pages */
+
+
+.grid-section div.project-description{
+    grid-column:7 /span 6 ;
+}
+
+.grid-section h2.summary-title{
+    font-weight: bold;
+    padding-bottom:10px;
+    font-size: 50%;
+}
+
+.grid-section div.project-features{
+    grid-column: 1 / span 6;
+    padding-top: 50px;
+}
+
+.grid-section div.project-technologies{
+    grid-column: 7 /span 5;
+    padding-top: 50px;
+}
+
+
+ /*-----------------------------------------------------------------------------------------------*/
+ /* Header Section */
+.header-section{
+    color:white;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #190808;
+}
+
+
+.arrow-container{
+    text-align: center;
+    padding-top: 0px;
+    transition: padding-top 0.5s;
+}
+
+.arrow-container:hover{
+  padding-top: 10px;
+}
+
+.arrow{
+  border: solid white;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#name{
+    font-size: 192px;
+}
+
+ /*-----------------------------------------------------------------------------------------------*/
+ /* About Section */
+
+.icons{
+      width: 100%;
+      margin: 0px auto 0px auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.project-icons{
+    width: 50%;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.icon{
+    width: 50px;
+}
+
+.icon-container{
+    margin:10px 75px 50px 0px;
+}
+
+.project-icon-container{
+    margin:10px 50px 50px 0px;
+}
+
+.icon-container img, .project-icon-container img{
+    opacity:1;
+    position:absolute;
+    transition: opacity 0.8s;
+}
+
+img.hidden{
+    opacity: 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+ 
+/* Responsive design */
+
+
+/* 2 column grid, small gutter */
+@media (max-width:1258px){
+    #main-content{
+        width: auto;
+        margin: 0px 5% 48px 5%;
+    }
+
+    #name{
+        font-size: 160px;
+    }
+
+    .arrow{
+        border-width: 0 12px 12px 0;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    p,li{
+        font-size: 16px;
+    }
+
+    .grid-section{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px 24px;
+        margin: 50px auto 0px auto;
+    }
+
+    
+    .grid-section h1{
+        grid-column: 1 / span 2;
+    }
+  
+    .grid-section img{
+        grid-column: 1 /span 1;
+        max-width: 500px;
+    }
+    
+    .grid-section p{
+        padding-bottom: 10px;
+    }
+    
+    .grid-section .about-content{
+        grid-column: 2 /span 1;
+    }
+    
+    .grid-section div.project1{
+        grid-column: 1 /span 1;
+    
+    }
+    .grid-section div.project2{
+        grid-column: 2 /span 1;
+    
+    }
+    
+    .grid-section div.project3{
+        grid-column: 1 /span 1;
+    }
+    
+    .grid-section div.project4{
+        grid-column: 2 /span 1;
+        grid-row: 3;
+    }
+    
+    .grid-section div.project5{
+        grid-column: 1 /span 2;
+        grid-row: 3;
+    }
+    .grid-section div.project{
+        max-width: 500px;
+        max-height: 410px;
+        margin-bottom: 150px;
+        transition: color 0.5s;
+    }
+
+    /* Grid section project pages */
+
+    .grid-section div.project-description{
+        grid-column: 2 /span 1 ;
+    }
+
+    .grid-section h2.summary-title{
+        font-weight: bold;
+        padding-bottom:10px;
+        font-size: 40%;
+    }
+
+    .grid-section div.project-features{
+        grid-column: 1 / span 1;
+        padding-top: 50px;
+    }
+
+    .grid-section div.project-technologies{
+        grid-column: 2 /span 1;
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width:1050px){
+
+    .grid-section img{
+        grid-column: 1 /span 1;
+        max-width: 375px;
+    }
+    
+    
+    .grid-section div.project{
+        max-width:100%;
+        max-height:100%;
+        margin-bottom: 50px;
+        transition: color 0.5s;
+    }
+    
+    /* Grid section project pages */
+
+    .grid-section div.project-description{
+        grid-column: 2 /span 1 ;
+    }
+
+    .grid-section h2.summary-title{
+        font-weight: bold;
+        padding-bottom:10px;
+        font-size: 40%;
+    }
+
+    .grid-section div.project-features{
+        grid-column: 1 / span 1;
+        padding-top: 25px;
+    }
+
+    .grid-section div.project-technologies{
+        grid-column: 2 /span 1;
+        padding-top: 25px;
+    }
+    
+}
+
+/* 1 coloumn grid, 15% gutter */
+@media (max-width:900px){
+
+    body{
+        width: auto;
+        
+    }
+    #main-content{
+        margin: 0px 15% 48px 15%;
+    }
+
+    section.header-section{
+        height:70vh;
+    }
+   
+    #name{
+        font-size: 120px;
+    }
+
+    .arrow{
+        border-width: 0 12px 12px 0;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    p,li{
+        font-size: 16px;
+    }
+
+    .grid-section{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px 24px;
+        margin: 50px auto 0px auto;
+    }
+
+    
+    .grid-section h1{
+        grid-column: 1 / span 1;
+    }
+  
+    .grid-section img{
+        grid-column: 1 /span 1;
+        max-width:100%;
+        max-height:100%;
+    }
+    
+    .grid-section .about-content{
+        grid-column: 1 /span 1;
+    }
+    
+
+    .grid-section div.project2{
+        grid-column: 1 /span 1;
+    
+    }
+
+    .grid-section div.project4{
+        grid-column: 1 /span 1;
+    }
+
+    /* Grid section project pages */
+
+    .grid-section div.project-description{
+        grid-column: 1 /span 1 ;
+    }
+
+    .grid-section h2.summary-title{
+        font-weight: bold;
+        padding-bottom:10px;
+        font-size: 40%;
+    }
+
+    .grid-section div.project-features{
+        grid-column: 1 / span 1;
+        padding-top: 25px;
+        
+    }
+
+    .grid-section div.project-technologies{
+        grid-column: 1 /span 1;
+        max-width: 100%;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width:800px){
+
+    body{
+        width: auto;
+    }
+
+   
+    
+    #name{
+        font-size: 100px;
+    }
+
+    .arrow{
+        border-width: 0 12px 12px 0;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    p,li{
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    body{
+        width: auto;
+        
+    }
+
+    #main-content{
+        margin: 0px 5% 48px 5%;
+    }
+
+    #name{
+        font-size: 90px;
+    }
+
+    .arrow{
+        border-width: 0 12px 12px 0;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    p,li{
+        font-size: 16px;
+    }
+}
+
+
+
+
+ 
