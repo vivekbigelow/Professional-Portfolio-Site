@@ -9,105 +9,36 @@
 	<!-- <link rel="icon" href="resources/img/index/favicon.png"> -->
 </head>
 
-<body>
+<script type="text/javascript" src="assets/js/face.js"></script>
 
-    <!-- Header -->
-    <section class="header-section">
-        <h1 id="name">VIVEK</h1>   
-        <h1 id="name">BIGELOW</h1> 
-        <p class="arrow-container"><i class="arrow down"></i></p>
-    </section>
+<body onmousemove="updateFace(event)">
 
-    <div id="main-content">
+  
+<div class="flex-wrapper">
+    <div class="content">
 
-    <!-- About -->
-    <section class="about-section grid-section">
-            <h1>About</h1>
-
-            <img class="headshot" src="assets/img/headshot.jpg" alt="Vivek headshot">
-            
-            
-            <div class="about-content">
-                <p>Vivek Bigelow is a web developer and indie game developer based in Indianapolis, IN. He is currently studying Computer Science at IUPUI. </p>
-               
-                <a href="assets/files/Resume_2020.pdf" class="button-link" target="_blank">View Resume</a>
-
-
-               
-                <div class="icons">
-                    <div class="icon-container" onmouseover="hover(this);" onmouseout="unhover(this);">
-                        <a href="https://github.com/vivekbigelow" target="_blank">
-                            <img src="assets/img/icons/github.svg" class="icon">
-                            <img src="assets/img/icons/github_hover.svg" class=" hidden icon">
-                        </a>
-                    </div>
-
-                    <div class="icon-container" onmouseover="hover(this);" onmouseout="unhover(this);">
-                        <a href="https://www.linkedin.com/in/vivek-bigelow-555089122/" target="_blank">
-                            <img src="assets/img/icons/linkedin.svg" class="icon">
-                            <img src="assets/img/icons/linkedin_hover.svg" class=" hidden icon">
-                        </a>
-                    </div>
-                    <!--<a href="https://www.linkedin.com/in/vivek-bigelow-555089122/" target="_blank"><img class="icon" src ="assets/img/icons/linkedin.svg" onmouseover="hoverLinkedIn(this);" onmouseout="unhoverLinkedIn(this);"></a>
-                    -->
-                </div>
-            </div>
-
-       <!--  -->
-    </section>
-
-    <!-- Project -->
-   
-    <section class="project-section grid-section">
-        <h1 class="project-header">Projects</h1>
-
-     
-         <div class="project project1">
-            <a class="project1" href="mycommunity.html"><img src="assets/img/projects/mycommunity.png" alt="sqaudron image"></a>
-            <p>Mycommunity</p>
-        </div>
-
-        <div class="project project2">
-            <a class="project1" href="squadron.html"><img src="assets/img/projects/squadron.png" alt="sqaudron image"></a>
-            <p>Squadron</p>
-        </div>
-
-        <div class="project project3">
-            <a class="project2" href="drawer.html"><img src="assets/img/projects/mousedrawer.png" alt="drawing board image"></a>
-            <p>Drawing Board</p>
-        </div>
-
-        <div class="project project4">
-            <a class="project2" href="traffic.html"><img src="assets/img/projects/obstaclegame.jpg" alt="traffic game image"></a>
-            <p>Traffic</p>
-        </div>
+        <nav>
+            <li><a href="about.html">About</a></li>
+            <li>Projects</li>
+            <li>Blog</li>
+        </nav>
     
-    </section> 
-
-    <!-- Contact -->
-    <section class="contact-section grid-section">
-        <h1>Contact</h1>
-
-        <form action="https://formspree.io/f/mgepqlpq" method="POST">
-            <label>
-                <p>Your email address:</p>
-                <input type="text" name="_replyto">
-            </label>
-            <label>
-                <p>Your message:</p>
-                <textarea name="message"></textarea>
-            </label>
-
-            <button type="submit">Send</button>
-        </form>
-
-    </section>
+        <div class="face-container">
+            <img id="face" class="face" src="assets/img/face/front.jpg">
+        </div>
     </div>
-    
-    <!-- Footer -->
-    <footer>
-        <p>Copyright Vivek Bigelow 2020</p>
-    </footer>
+
+    <!-- X-coordinate
+<input type="text" id="X">
+<br>
+<br>
+Y-coordinate
+<input type="text" id="Y"> -->
+
+<footer>
+    <p>Copyright Vivek Bigelow 2024</p>
+</footer>
+</div>
 </body>
 
 <script src="assets/js/jquery.js"></script>

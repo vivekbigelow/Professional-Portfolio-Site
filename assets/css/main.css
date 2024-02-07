@@ -70,15 +70,20 @@ body {
     font-size : 80px; 
     padding:0;
     color: #190808;
-    background-color: white;
 }
 
 #main-content{
-    width: 1130px;
-    margin: 0px auto 48px auto;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
 }
 
-
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 header{
     display: flex;
@@ -133,9 +138,8 @@ a:hover{
 
 
 footer {
-    font-size: 40px;
-    background-color: #190808;
-    color: white;
+    font-size: 12px;
+    color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,6 +147,18 @@ footer {
     width:100%;
 }
 
+nav, a {
+    color: white;
+}
+
+.face {
+    width: 300px;
+}
+
+.face-container {
+    display: grid;
+    place-items: center;
+}
 
 .grid-section{
     background-color: white;
@@ -353,6 +369,13 @@ a.description-link{
 
  /*-----------------------------------------------------------------------------------------------*/
  /* About Section */
+
+
+ .about-content{
+    margin-top: 15%;
+    margin-left: 500px;
+    margin-right: 500px;
+ }
 
 .icons{
       width: 100%;
