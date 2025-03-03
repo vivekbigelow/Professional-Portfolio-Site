@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Goblin+One&family=Jacques+Francois+Shadow&display=swap');
+@font-face {
+  font-family:'Home Video Regular';
+  src: url("/fonts/HomeVideo-regular.ttf");
+}
+
+html{
+  justify-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 30px 84px 0 84px;
+  font-family: 'Fustat', serif;
+  width:1400px;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 120px;
+  margin: 0;
+  line-height: 1.2;
+  
+}
+
+h1,h2 {
+  font-family: 'Home Video Regular', serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1400px) {
+  body {
+    width: 100vw;
+    padding: 0 20px 0 20px ;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
