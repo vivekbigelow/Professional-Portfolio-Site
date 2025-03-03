@@ -11,7 +11,7 @@ export default function ProjectSquare({ title }) {
         >
           <Image
             className={styles.projectImage}
-            src={"/img/work/" + title.split(" ").join("") + "-cover.jpg"}
+            src={"/img/work/" + title.split(" ").join("").toLowerCase() + "-cover.jpg"}
             width={466}
             height={466}
             alt={title}
