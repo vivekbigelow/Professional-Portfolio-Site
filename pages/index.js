@@ -1,24 +1,25 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-import Face from '../components/Face'
+//import Head from 'next/head'
+import styles from "../styles/Home.module.css";
+import Face from "../components/Face";
+import HeadWrapper from "../components/HeadWrapper";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Vivek Bigelow</title>
-        <link rel="icon" href="/img/face/front.jpg"></link>
-      </Head>
+    <div>
+      <HeadWrapper />
 
-      <main className={styles.main}>
-        <nav className={styles.nav}>
-          <Link className={styles.navLink} href="/about">About</Link>
-          <Link className={styles.navLink} href="/blog">Blog</Link>
-          <Link className={styles.navLink} href="/projects">Projects</Link>
-        </nav>
-        <Face />
-      </main>
+      <h1>VIVEK</h1>
+      <h1>BIGELOW</h1>
+      <p className={styles.aboutParagraph}>
+        Vivek Bigelow is a multidisciplinary digital artist and designer based
+        in Indianapolis Indiana. This site acts as a portfolio to showcase some
+        of his work. Some of his areas of interest include web design, graphic
+        design, video editing, music production, and photography.
+      </p>
+      <Nav />
+
+      <Face />
     </div>
-  )
+  );
 }

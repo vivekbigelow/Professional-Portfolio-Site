@@ -1,5 +1,6 @@
 import { useEffect, useState, React } from "react";
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Face() {
   const [mousePos, setMousePos] = useState({});
@@ -72,13 +73,13 @@ export default function Face() {
   }, [mousePos]);
 
   return (
-    <main>
+    <main className={styles.faceContainer}>
       <Image
         id="face"
         className="face"
         src={"/img/face/" + faceImg}
-        width={300}
-        height={380}
+        width={350}
+        height={360}
         alt="face"
       />
     </main>
