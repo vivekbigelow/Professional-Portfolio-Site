@@ -14,6 +14,13 @@ export default function Fliers() {
           <h1>Fliers</h1>
           <p>Fliers for shows in Indianapolis.</p>
           <div className={styles.imgGrid}>
+          <Link href={"/img/work/fliers/nylon-flyer.jpg"}>
+              <img
+                src="/img/work/fliers/nylon-flyer.jpg"
+                width="100%"
+                alt="Nylon Flier"
+              />
+            </Link>
             <Link href={"/img/work/fliers/chess-flyer.jpg"}>
               <img
                 src="/img/work/fliers/chess-flyer.jpg"
