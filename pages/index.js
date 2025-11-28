@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="content">
+    <div className={styles.content}>
       <section id="home">
         <HeadWrapper />
         <Face />
@@ -66,6 +66,7 @@ export default function Home() {
             target="_blank"
             href={"https://statestreetpub.bandcamp.com/album/ssp-lives-vol-1"}
             rel="noopener noreferrer"
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/ssplivescassette.jpg"}
@@ -73,13 +74,13 @@ export default function Home() {
               content={
                 "A live recording of the Spastic Bombastic track Anna was included on the SSP Lives Vol. 1 compilation tape"
               }
-              imgWidth={"900px"}
             />
           </Link>
           <Link
             target="_blank"
             href={"/img/spasticbombastic/dusk.jpg"}
             rel="noopener noreferrer"
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/dusk.jpg"}
@@ -95,6 +96,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/gardenoflove.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/gardenoflove.jpg"}
@@ -108,6 +110,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/twofatsisters.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/twofatsisters.jpg"}
@@ -118,10 +121,9 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div>
+        <div className={styles.videoFrame}>
           <iframe
-            width="100%"
-            height="750"
+            className={styles.iframe}
             src="https://www.youtube.com/embed/rLwxaIeXtWw?si=k5CmeuiUARtysCss"
             title="YouTube video player"
             frameborder="0"
@@ -138,6 +140,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/ssp.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/ssp.jpg"}
@@ -151,6 +154,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"https://sooflay.bandcamp.com/album/sooflay"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/sooflay.jpg"}
@@ -159,10 +163,9 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div>
+        <div className={styles.videoFrame}>
           <iframe
-            width="100%"
-            height="750"
+            className={styles.iframe}
             src="https://www.youtube.com/embed/3CNR565cbww?si=9XyFHNBuPLlfV-TY"
             title="YouTube video player"
             frameborder="0"
@@ -179,6 +182,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/autobahn.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/autobahn.jpg"}
@@ -193,6 +197,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/ianssp.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/ianssp.jpg"}
@@ -206,6 +211,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/lavenderjets.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/lavenderjets.jpg"}
@@ -219,6 +225,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/matthewdangerlippman.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/matthewdangerlippman.jpg"}
@@ -232,6 +239,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/memorycard.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/memorycard.jpg"}
@@ -247,6 +255,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/hybridhead.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/hybridhead.jpg"}
@@ -260,6 +269,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/ryandavis.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/ryandavis.jpg"}
@@ -273,6 +283,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/npc.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/npc.jpg"}
@@ -286,6 +297,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/supportssp.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/supportssp.jpg"}
@@ -312,6 +324,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/artificialgo.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/artificialgo.jpg"}
@@ -321,22 +334,23 @@ export default function Home() {
               }
             />
           </Link>
-          <div>
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/G4s4rJJW24E?si=5Uf8Ax0ku4MgeM36"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p className={styles.sectionParagraph}>
-              Four piece set recorded on VHS at SSP courtesy of Barbie. The four
-              piece band included Barbie on Bass, Jacki on Guitar, Ryan on
-              Drums, and Victor Gooz on Guitar and Vocals
-            </p>
+          <div className={styles.rowItem}>
+            <div className={styles.videoFrame}>
+              <iframe
+                className={styles.iframe}
+                src="https://www.youtube.com/embed/G4s4rJJW24E?si=5Uf8Ax0ku4MgeM36"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p className={styles.sectionParagraph}>
+                Four piece set recorded on VHS at SSP courtesy of Barbie. The
+                four piece band included Barbie on Bass, Jacki on Guitar, Ryan
+                on Drums, and Victor Gooz on Guitar and Vocals
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.row}>
@@ -344,6 +358,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/tuft.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/tuft.jpg"}
@@ -356,21 +371,22 @@ export default function Home() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href={"/img/work/fliers/spastic-flyer.jpg"}
+            href={"/img/spasticbombastic/spastic-flyer.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
-              imgSrc={"/img/work/fliers/spastic-flyer.jpg"}
+              imgSrc={"/img/spasticbombastic/spastic-flyer.jpg"}
               imgAlt={"Devil Flier"}
               content={
                 "Show at Dear Mom with Bad Crime and Night Manager. I drew this flier for the show."
               }
-              imgWidth={"375"}
             />
           </Link>
           <Link
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/shadowshow.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/shadowshow.jpg"}
@@ -382,6 +398,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={"/img/spasticbombastic/debut.jpg"}
+            className={styles.rowItem}
           >
             <HoverImage
               imgSrc={"/img/spasticbombastic/debut.jpg"}
@@ -392,69 +409,65 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/ZwmTQOv6BFs?si=ejfqk3asulfjdCCT"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            The first Spastic Bombastic performance, live at The Burger Palace.
+          </p>
+        </div>
 
-        <iframe
-          width="100%"
-          height="750"
-          src="https://www.youtube.com/embed/ZwmTQOv6BFs?si=ejfqk3asulfjdCCT"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p className={styles.sectionParagraph}>The first Spastic Bombastic performance, live at The Burger Palace.</p>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/uD-w36klXM8?si=MQ1KvxiYHS7gHbaC"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            On and On, a B side not released on the first album
+          </p>
         </div>
-        <div className={styles.row}>
-          <div className={styles.column}>
-            <iframe
-              width="500"
-              height="315"
-              src="https://www.youtube.com/embed/uD-w36klXM8?si=MQ1KvxiYHS7gHbaC"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p className={styles.sectionParagraph}>
-              On and On, a B side not released on the first album
-            </p>
-          </div>
-          <div className={styles.column}>
-            <iframe
-              className={styles.videoFrame}
-              width="500"
-              height="315"
-              src="https://www.youtube.com/embed/2m3r9rWgRhU?si=PqmUo6ZZjwytq7bl"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowFullScreen="true"
-            ></iframe>
-            <p className={styles.sectionParagraph}>
-              Single music video for My Brain is a Spider. Shot on VHS.
-            </p>
-          </div>
-          <div className={styles.column}>
-            <iframe
-              width="500"
-              height="315"
-              src="https://www.youtube.com/embed/V1xeFOkKN_4?si=J6yt6SEbSWGU6eI0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p className={styles.sectionParagraph}>
-              The full length album, My Brain is a Spider, recorded on a 4 track
-              and released 3/28/2024 on Twisted Twin Sister Tapes.
-            </p>
-          </div>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/2m3r9rWgRhU?si=PqmUo6ZZjwytq7bl"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowFullScreen="true"
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            Single music video for My Brain is a Spider. Shot on VHS.
+          </p>
         </div>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/V1xeFOkKN_4?si=J6yt6SEbSWGU6eI0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            The full length album, My Brain is a Spider, recorded on a 4 track
+            and released 3/28/2024 on Twisted Twin Sister Tapes.
+          </p>
+        </div>
+
         <div className={styles.archiveNavigation}>
           <p id="2023" className={styles.sectionParagraph}>
             2023
@@ -466,20 +479,21 @@ export default function Home() {
             <p className={styles.sectionParagraph}>&uarr;</p>
           </Link>
         </div>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/kfGsnWNy0M4?si=ijH8VucM5VkvJVhv"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p className={styles.sectionParagraph}>
-          Die Today and Hometown recorded and released after the demise of AHW
-          273
-        </p>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/kfGsnWNy0M4?si=ijH8VucM5VkvJVhv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            Die Today and Hometown recorded and released after the demise of AHW
+            273
+          </p>
+        </div>
         <div className={styles.archiveNavigation}>
           <p id="2022" className={styles.sectionParagraph}>
             2022
@@ -488,19 +502,20 @@ export default function Home() {
             <p className={styles.sectionParagraph}>&uarr;</p>
           </Link>
         </div>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/nF_oBnRMvP8?si=xrtSIZRIjqiK2x6E"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p className={styles.sectionParagraph}>
-          The first Spastic Bombastic song Lost World
-        </p>
+        <div className={styles.videoFrame}>
+          <iframe
+            className={styles.iframe}
+            src="https://www.youtube.com/embed/nF_oBnRMvP8?si=xrtSIZRIjqiK2x6E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p className={styles.sectionParagraph}>
+            The first Spastic Bombastic song Lost World
+          </p>
+        </div>
       </section>
       <section>
         <p className={styles.sectionParagraph}>
