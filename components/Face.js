@@ -9,8 +9,8 @@ export default function Face() {
   useEffect(() => {
     const updateFace = (event) => {
       setMousePos({ x: event.clientX, y: event.clientY });
-      const h = document.body.clientHeight;
-      const w = document.body.clientWidth;
+      const h = document.documentElement.clientHeight;
+      const w = document.documentElement.clientWidth;
 
       //check upper half
       if (mousePos.y / h < 0.25) {
@@ -78,8 +78,8 @@ export default function Face() {
         id="face"
         className="face"
         src={"/img/face/" + faceImg}
-        width={350}
-        height={360}
+        width={150}
+        height={150}
         alt="face"
       />
     </main>

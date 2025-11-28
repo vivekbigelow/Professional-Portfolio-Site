@@ -6,16 +6,21 @@
 
 html{
   justify-items: center;
+  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
   margin: 30px 84px 0 84px;
-  font-family: 'Fustat', serif;
+  font-family: 'Times New Roman', Times, serif;
   width:1400px;
   font-size: 20px;
   justify-content: center;
   display: flex;
+  color: orangered;
+  scroll-behavior: smooth;
+  background-color: goldenrod;
+  background-image: url("/img/smileyguy.gif");
 }
 
 a {
@@ -31,7 +36,7 @@ h1{
 }
 
 h1,h2 {
-  font-family: 'Home Video Regular', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
 }
 
