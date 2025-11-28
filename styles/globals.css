@@ -4,12 +4,14 @@ html{
 }
 
 body {
-  padding: 0;
-  margin: 30px 84px 0 84px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
   font-family: 'Times New Roman', Times, serif;
-  width:1400px;
   font-size: 20px;
+  min-width: 500px;
+  max-width: 1520px;
   justify-content: center;
+  align-items: center;
   display: flex;
   color: orangered;
   scroll-behavior: smooth;
@@ -39,10 +41,6 @@ h1,h2 {
 }
 
 @media (max-width: 1400px) {
-  body {
-    width: 100vw;
-    padding: 0 20px 0 20px ;
-  }
 
   h1 {
     font-size: 60px;
