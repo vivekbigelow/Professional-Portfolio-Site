@@ -1,3 +1,6 @@
+.content {
+  scroll-behavior: smooth;
+}
 .main {
   width: 100%;
 }
@@ -5,22 +8,57 @@
   justify-content: center;
   display: flex;
 }
-
-.aboutParagraph {
-  width: 1056px;
+.titleContent {
+  background-color: blue;
+  background-image: url("/img/smiley.gif");
+  border: orangered, 10px, solid;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
 }
-
+.mainHeader {
+  background-color: white;
+  background-image: url("/img/death.gif")
+}
 .nav {
-  width: 70%;
+  width: fit-content;
+  padding: 10px;
   display: flex;
   gap: 16px;
   color: black;
+  background-color: orangered;
 }
 
 .navLink:hover {
-  color: red;
+  color: yellow;
+}
+.archiveNavigation {
+  display: flex;
+  gap: 5px;
+}
+.sectionTitle {
+  background-color: orangered;
+  color: black;
+  padding: 5px;
+  width: fit-content;
+  margin: 5px 5px 5px 0;
+  font-size: 60px;
 }
 
+.sectionParagraph {
+  background-color: orangered;
+  color: black;
+  padding: 5px;
+  width: fit-content;
+}
+
+.row{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1520px;
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -49,7 +87,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #f70b0b;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -66,13 +104,14 @@
   margin-top: 3rem;
 }
 
-.imgGrid {
+/* .imgGrid {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 5px;
   margin-top: 8px;
-}
+  background-color: #f70b0b;
+} */
 
 .card {
   margin: 1rem;
