@@ -4,6 +4,7 @@ export default function HeadWrapper() {
         <Head>
             <title>Spastic Bombastic</title>
             <link rel="icon" href="/img/smileyguy.gif"></link>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
     )
 }
