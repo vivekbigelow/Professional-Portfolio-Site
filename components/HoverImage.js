@@ -1,13 +1,15 @@
-import { useState, React } from "react";
+import { useEffect, useState, React } from "react";
 import styles from "../styles/Home.module.css";
 export default function HoverImage({
   imgSrc,
   imgAlt,
   content,
-  imgWidth='100%'
 }) {
   const [showParagraph, setShowParagraph] = useState(false);
   const [paragraphPosition, setParagraphPosition] = useState({ x: 0, y: 0 });
+ 
+
+  
 
   const handleMouseEnter = () => {
     setShowParagraph(true);
@@ -28,23 +30,22 @@ export default function HoverImage({
       onMouseMove={handleMouseMove}
     >
       <img
-        className={styles.hoverArea}
+        className={styles.hoverImg}
         src={imgSrc}
-        width={imgWidth}
         alt={imgAlt}
       />
-      {showParagraph && (
+      {showParagraph && (window.innerWidth > 1000) && (
         <p
           style={{
             position: "fixed", // Fixed positioning relative to the viewport
             top: paragraphPosition.y,
             left: paragraphPosition.x,
-            backgroundColor: 'orangered',
-            color: 'black',
-            padding: '5px',
+            backgroundColor: "orangered",
+            color: "black",
+            padding: "5px",
             pointerEvents: "none", // Prevents the paragraph from interfering with mouse events
             zIndex: 1000,
-            width: '300px'
+            width: "300px",
           }}
           className={styles.sectionParagraph}
         >
