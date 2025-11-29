@@ -46,3 +46,10 @@ h1,h2 {
     font-size: 60px;
   }
 }
+
+@media (max-width: 500px) {
+
+  h1 {
+    font-size: 30px;
+  }
+}
